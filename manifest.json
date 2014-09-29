@@ -1,0 +1,18 @@
+{
+    "name": "Rastreamento Rápido",
+    "version": "0.3.1",
+    "manifest_version": 2,
+    "description": "Faça o rastreamento de suas encomendas de forma rápida e fácil!",
+    "permissions": ["contextMenus","tabs"],
+    "icons": {
+        "128": "iconbig.png",
+        "16":"icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://jquery.com/*"],
+        "js": ["jquery-1.6.1.js"]
+    }],
+    "background": {
+        "page": "background.html"   
+    }
+}
